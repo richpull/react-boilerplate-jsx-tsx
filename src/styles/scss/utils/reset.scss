@@ -1,0 +1,36 @@
+*, *:after, *:before{
+  margin: 0;
+  padding: 0;
+  zoom:1;
+  box-sizing: border-box;
+  tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust:none;
+}
+*:focus{
+  outline: none;
+}
+ins{
+  text-decoration: none;
+}
+a img{
+  border: none;
+}
+i{
+  font-style: italic;
+}
+img{
+  max-width: 100%;
+  border:0;
+}
+table{
+  border-collapse: collapse;
+}
+[href^="tel"]{
+  text-decoration: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0
+}

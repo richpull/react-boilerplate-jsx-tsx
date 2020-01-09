@@ -1,0 +1,75 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "plugins": [
+    "babel",
+    "import",
+    "react",
+    "react-hooks",
+    "prettier",
+    "@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["."],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": ["plugin:@typescript-eslint/recommended"],
+  "rules": {
+    "linebreak-style": "off", // Doesn't work properly on Windows
+    "arrow-parens": "off", // incompatible with prettier
+    "object-curly-newline": "off", // incompatible with prettier
+    "no-mixed-operators": "off", // incompatible with prettier
+    "arrow-body-style": "off", //
+    "function-paren-newline": "off", // incompatible with prettier
+    "no-plusplus": "off",
+    "space-before-function-paren": 0, // incompatible with prettier
+    "max-len": ["error", 100, 2, { "ignoreUrls": true }],
+    "no-console": "error",
+    "no-alert": "error",
+    "no-param-reassign": "off",
+    "radix": "off", // parseInt, parseFloat and radix off
+    "react/require-default-props": "off",
+    "react/forbid-prop-types": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".js",".jsx",".ts",".tsx"] }],
+    "prefer-destructuring": "off",
+    "react/no-find-dom-node": "off",
+    "react/no-did-mount-set-state": "off",
+    "react/no-unused-prop-types": "off", //  Doesn't work stabile
+    "react/jsx-one-expression-per-line": "off",
+    "prettier/prettier": "off",
+    "no-unused-vars": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+
+    "curly": [2, "all"],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "no-underscore-dangle": 0,
+    "no-use-before-define": "error",
+    "no-minusminus": 0,
+    "no-unused-expressions": 0,
+    "no-return-await": 0,
+    "max-params": ["error", 5],
+    "max-depth": ["error", 3],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-member-accessibility": "off",
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-unused-vars": "off",
+    "react/prop-types": "off"
+  }
+}

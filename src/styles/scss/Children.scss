@@ -1,0 +1,11 @@
+.children{
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  p{
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}

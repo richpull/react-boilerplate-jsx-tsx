@@ -1,0 +1,9 @@
+/.git
+/.vscode
+.idea
+node_modules
+dist
+__test__
+__snapshots__
+webpack.config.dev.babel.js
+webpack.config.prod.babel.js

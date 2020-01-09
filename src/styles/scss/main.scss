@@ -1,0 +1,36 @@
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/reset";
+html {
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  height: 100%;
+  @media screen and (max-width: $desktopWidth) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 14px;
+  }
+}
+
+/*
+  Example
+*/
+body{
+  background: #ccc;
+}
+.wrapper{
+  width: 100%;
+  padding: 50px;
+  max-width: 700px;
+  margin: 50px auto;
+  background: #fff;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
